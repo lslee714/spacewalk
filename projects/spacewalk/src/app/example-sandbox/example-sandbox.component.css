@@ -1,8 +1,12 @@
 /* See comments at the bottom for changes to try. */
 
 .sandbox {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 20vw 60vw;
+  grid-template-rows: repeat(10);
   background-color: lightblue;
-  padding: 20px;
+  padding: 50px;
 }
 
 .sandbox > * {
@@ -10,26 +14,39 @@
   padding: 20px;
 }
 
-img {
-  width: 100%;
-}
+
 
 header {
+  display: grid;
+  place-items: center;
+  grid-column: span 2;
 }
 
 aside {
+  grid-column: span 2;
 }
 
 main {
+  grid-column-start: 2;
+  grid-row: span 2;
+  width: 100%;
+  height: 100%;
 }
 
 .carl {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  width: 100%
 }
 
 .pbd {
+  grid-column-start:1;
+  grid-row-start: 3;
+  width: 100%
 }
 
 footer {
+  grid-column: span 2;
 }
 
 /*
